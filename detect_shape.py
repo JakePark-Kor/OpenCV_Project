@@ -24,7 +24,7 @@ def main():
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     _, img_bin  = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     contours, _ = cv2.findContours( img_bin, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-    # (엔디?) arrray 값으로 반환되는 contours 값을 사용하여
+    # ndarrray 값으로 반환되는 contours 값을 사용하여
 
     # pts가 객체 하나하나의 외각선 엔디? array를 같는 형태로 반환 가능
 
